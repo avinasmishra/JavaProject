@@ -73,7 +73,7 @@ public class LinkedListDemo {
 
         System.out.println("Element in linkedlist:"+a1); //[X, Z, B, A]
         Collections.sort(a1);
-        System.out.println("Element in linkedlist after sorting::"+a1); //[X, Z, B, A]
+        System.out.println("Element in linkedlist after sorting::"+a1); //[A, B, X, Z]
 
         Collections.sort(a1,Collections.reverseOrder());
         System.out.println("Element in linkedlist after sorting in reverse order::"+a1); //[Z, X, B, A]
@@ -95,19 +95,17 @@ public class LinkedListDemo {
         ll.add("cat");
         ll.add("cat");
 
-        System.out.println(ll);//[Apple, ball, cat, cat]
+        System.out.println(ll);//[dog, horse, cat, cat]
         //adding element to first in list
         ll.addFirst("Tiger");
         //adding element to last in list
         ll.addLast("Elephant");
-        System.out.println(ll);
+        System.out.println(ll); //[Tiger, dog, horse, cat, cat, Elephant]
 
         //get first element in linkedlist
-        System.out.println(ll.getFirst());
+        System.out.println(ll.getFirst());  //Tiger
         //get last element in linkedlist
-        System.out.println(ll.getLast());
-
-
+        System.out.println(ll.getLast());  //Elephant
 
     }
 }

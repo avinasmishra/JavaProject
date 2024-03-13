@@ -78,14 +78,14 @@ public class ArrayListDemo {
 
         System.out.println("Element in arraylist:"+a1); //[X, Z, B, A]
         Collections.sort(a1);
-        System.out.println("Element in arraylist after sorting::"+a1); //[X, Z, B, A]
+        System.out.println("Element in arraylist after sorting::"+a1); //[A, B, X, Z]
 
         Collections.sort(a1,Collections.reverseOrder());
         System.out.println("Element in arraylist after sorting in reverse order::"+a1); //[Z, X, B, A]
 
         //shuffling - collections
         Collections.shuffle(a1);
-        System.out.println("Element in arraylist after shuffling::"+a1); //[
+        System.out.println("Element in arraylist after shuffling::"+a1);
 
         //convert array to arraylist
         String arr[] = {"Apple", "Ball","Cat","Dog"};
